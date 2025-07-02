@@ -18,7 +18,7 @@ const ShowWinner=(userWin,userChoice,compChoice)=>{
     if(userWin){
         user_score++;
         userScorePara.innerText=user_score;
-        msg.innerText=`You win ${userChoice} beats ${compChoice}`;
+        msg.innerText=`You Win! ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
         
 
@@ -26,7 +26,7 @@ const ShowWinner=(userWin,userChoice,compChoice)=>{
     else{
         comp_score++;
         compScorePara.innerText=comp_score;
-        msg.innerText=`Comp win ${userChoice} beats ${compChoice}`;
+        msg.innerText=`You Lose! ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor="red";
 
     }
